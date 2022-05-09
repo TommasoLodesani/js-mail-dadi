@@ -14,12 +14,15 @@ myButton.addEventListener("click",
         
 
         for(i = 0; i < listaEmail.length; i++){
+
             console.log(listaEmail[i]);
 
-            if(emailUtente == listaEmail[i]){
+            if(emailUtente == listaEmail[i] ){
                 myOutput.innerHTML = `Benvenuto`;
-                
             }
+            // } else {
+            //     myOutput.innerHTML = `Sbagliato`;
+            // }
         }
 
 
