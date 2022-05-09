@@ -18,15 +18,20 @@ myButton.addEventListener("click",
             console.log(listaEmail[i]);
 
             if(emailUtente == listaEmail[i] ){
-                myOutput.innerHTML = `Benvenuto`;
-            }
-            // } else {
-            //     myOutput.innerHTML = `Sbagliato`;
-            // }
+
+                emailUtente = true;
+
+            } 
         }
 
+        if (emailUtente == true){
 
+            myOutput.innerHTML = "Benvenuto";
+        } else {
 
+            myOutput.innerHTML = "Sbagliato";
+        }
+        
 
     }
 
