@@ -17,19 +17,20 @@ myButton.addEventListener("click",
 
         let numeroUser = Math.floor(Math.random() * 6) + 1;
         console.log(numeroUser);
-        myNumeroUtente.append(numeroUser);
+        myNumeroUtente.innerHTML = `${numeroUser}` ;
 
         let numeroPc = Math.floor(Math.random() * 6) + 1;
         console.log(numeroPc);
-        myNumeroPc.append(numeroPc);
+        myNumeroPc.innerHTML = `${numeroPc}` ;
 
         if (numeroUser > numeroPc) {
-            myOutput.append("Hai vinto");
+            myOutput.innerHTML = `Hai vinto`;
 
         } else if (numeroUser === numeroPc) {
-            myOutput.append("Riprova! Avete fatto lo stesso numero!");
+            myOutput.innerHTML = `Riprova avete fatto lo stesso numero!`;
+           
         } else if (numeroUser < numeroPc){
-            myOutput.append("Hai perso");
+            myOutput.innerHTML = `Hai perso`;
 
         }
 
