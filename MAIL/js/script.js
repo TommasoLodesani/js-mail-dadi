@@ -6,6 +6,8 @@ const myOutput = document.querySelector(".risultato");
 
 const listaEmail = ["tommaso@gmail.com", "luca@gmail.com", "anna@gmail.com", "giulia@gmail.com"];
 
+let mail = false;
+
 myButton.addEventListener("click",
 
     function () {
@@ -19,12 +21,12 @@ myButton.addEventListener("click",
 
             if(emailUtente == listaEmail[i] ){
 
-                emailUtente = true;
+               mail = true;
 
             } 
         }
 
-        if (emailUtente == true){
+        if (mail == true){
 
             myOutput.innerHTML = "Benvenuto";
         } else {
@@ -32,7 +34,6 @@ myButton.addEventListener("click",
             myOutput.innerHTML = "Sbagliato";
         }
         
-
     }
 
 )
